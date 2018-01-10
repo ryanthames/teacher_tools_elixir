@@ -48,7 +48,8 @@ defmodule SeatingChartGenerator.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:faker ,"~> 0.7", only: :test},
+      {:faker ,"~> 0.9", only: :test},
+      {:ex_machina, "~> 2.1", only: :test},
       {:csv, "~> 2.0.0"}
     ]
   end
