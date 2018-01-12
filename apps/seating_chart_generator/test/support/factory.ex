@@ -7,7 +7,8 @@ defmodule SeatingChartGenerator.Factory do
       first_name: Faker.Name.first_name,
       last_name: Faker.Name.last_name,
       category: Faker.Lorem.word,
-      award_name: Faker.Lorem.word
+      award_name: Faker.Lorem.word,
+      nhs: false
     }
   end
 end
