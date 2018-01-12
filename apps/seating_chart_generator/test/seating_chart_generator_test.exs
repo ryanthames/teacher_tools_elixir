@@ -23,6 +23,7 @@ defmodule SeatingChartGeneratorTest do
       assert "Thames" == Enum.at(order_by_seat, 5)
     end
 
+    @tag :pending
     test "only special services assigned to row A", %{academic_awards: academic_awards, school_comm_awards: school_comm_awards} do
       seating_chart = SeatingChartGenerator.generate_chart(:seat, academic_awards, school_comm_awards)
 
@@ -31,6 +32,7 @@ defmodule SeatingChartGeneratorTest do
       |> Enum.map(fn {seat, _award} -> assert "Row A" == seat end)
     end
 
+    @tag :pending
     test "nhs officers should be on the stage" do
       assert false
     end
